@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --C1: #539165;
+    --C2: #3F497F;
+    --C3: #F7C04A;
+    --C4: #F8F5E4;
+    --C5: #4E6E81;
+    --C6: #F9DBBB;
+
+}
+
+.body {
+    height: 100vh;
+    background: blanchedalmond;
+}
+
+.nav,
+.navbar {
+    width: 100%
+}
+
+.gradientBG {
+    background: radial-gradient(circle at top, var(--C1), var(--C2), var(--C3)), radial-gradient(circle at bottom, var(--C4), var(--C5), var(--C6));
+    background-size: 400% 400%;
+    -webkit-animation: gradientBody 12s ease-in-out infinite;
+}
+@-webkit-keyframes gradientBody {
+    0%{
+        background-position: 100% 10%;
+    }
+    50%{
+        background-position: -100% 100%;
+    }
+    100%{
+        background-position: 100% 10%;
+    }
+}
